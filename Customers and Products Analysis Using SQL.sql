@@ -1,6 +1,6 @@
 /*
 Customers and Products Analysis Using SQL
-Skills used: Union Operator, Subqueries, Joins, With Clause
+Skills used: Union Operator, Aggregate Functions, Subqueries, Joins, With Clause
 */
 
 /*
