@@ -1,6 +1,6 @@
 /*
 Customers and Products Analysis Using SQL
-Skills used: Subqueries
+Skills used: Union Operator, Subqueries, Joins, With Clause
 */
 
 /*
@@ -125,7 +125,7 @@ SELECT o.customerNumber, SUM(quantityOrdered * (priceEach - buyPrice)) AS profit
  GROUP BY o.customerNumber
  ORDER BY profit DESC;
  
- -- Calulated the top 5 most engaged customers
+ -- Calculating the top 5 most engaged customers
  
 WITH 
 
@@ -147,6 +147,7 @@ SELECT contactLastName, contactFirstName, city, country, mc.profit
  LIMIT 5;
  
  -- Top 5 least engaging customers
+ 
 WITH 
 
 money_in_by_customer_table AS (
@@ -167,6 +168,7 @@ SELECT contactLastName, contactFirstName, city, country, mc.profit
  LIMIT 5;
  
  -- Calculating the average lifetime value of a customer
+ 
 WITH 
 
 money_in_by_customer_table AS (
